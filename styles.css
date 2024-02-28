@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+}
+
+h1{
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.input{
+    background-color: rgb(155, 82, 224);
+    border: 1rem black solid;
+    width: 54rem;
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#number{
+    height: 6rem;
+    font-size: 2.5rem;
+    width: 38rem;
+    border-bottom: 0.4rem green solid;
+    text-align: center;
+}
+
+button{
+    padding: 1rem 2rem;
+    background-color: green;
+    font-size: 2.8rem;
+    height: 6rem;
+}
+
+.output{
+ color: white;   
+}
+
+p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 576px){
+    .container{
+        height: 50%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .input{
+        width: 32rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #number{
+        font-size: 2rem;
+        width: 34rem;
+    }
+
+    button{
+        font-size: 2.1rem;
+    }
+}
